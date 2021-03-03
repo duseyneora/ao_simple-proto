@@ -1,0 +1,30 @@
+button, a {
+    outline: none;
+    text-decoration: none;
+    margin: 0;
+    border: none;
+        &.btn-link {
+            // font-size: 1em;
+            font-size: .8em;
+            @include br(25px);
+            padding: 3px 20px;
+            transition: .3s;
+            cursor: pointer;
+                &.continue-btn {
+                    background: $secondary-color;
+                    color: white;
+                        &:hover {
+                            background: lighten($secondary-color, 5%);
+                        }
+                }
+                &.edit-btn {
+                    background: white;
+                    color: $gray-4;
+                    border: 1px solid $gray-4;
+                        &:hover {
+                            background: $gray-4;
+                            color: white;
+                        }
+                }
+        }
+}

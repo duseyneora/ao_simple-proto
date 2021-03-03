@@ -1,0 +1,10 @@
+// style imports for overview views
+@import 'overview_no-orders/index', 'overview_with-orders/index';
+
+// style imports for edit products
+@import 'edit-products/index';
+@import 'create-new-order/';
+
+// style imports for edit views
+@import 'edit-ship-date/index', 'edit-ship-address/index', 'edit-pay-method/index';
+

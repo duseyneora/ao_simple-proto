@@ -1,0 +1,36 @@
+@mixin flex($direction, $wrapping, $justify, $align)
+{
+    @content;
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrapping;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin size($height, $width) 
+{
+    @content;
+    height: $height; width: $width;
+}
+
+@mixin absoluteCenter()
+{
+    @content;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+@mixin br($val)
+{
+    @content;
+    border-radius: $val;
+}
+
+@mixin fw($weight)
+{
+    @content;
+    font-weight: $weight;
+}

@@ -1,0 +1,36 @@
+.notification-style-alerts {
+    @include flex(row, nowrap, space-between, center);
+    @include br(10px);
+    @include size(100px, 95%);
+    @include absoluteCenter;
+    position: fixed;
+    top: -100px;
+    max-width: 500px;
+    min-height: 50px;
+    padding: 10px 15px;
+    text-align: center;
+    background: $alert-success;
+    color: white;
+    transition: .4s ease-in-out;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+    letter-spacing: .5px;
+    line-height: 1.4em;
+        &.success {
+            background: $alert-success;
+        }
+        &.warning {
+            background: $alert-warning;
+        }
+        &.error {
+            background: $alert-error;
+        }
+        & .close-notification {
+            @include br(5px);
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: .3s;
+            &:hover {
+                background: rgba(0,0,0,0.1);
+            }
+        }
+}

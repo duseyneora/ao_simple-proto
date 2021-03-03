@@ -1,0 +1,18 @@
+.ao-banners {
+    @include size(70px, 100%);
+    @include flex(row, nowrap, space-between, center);
+    background: $gray-2;
+    padding: 10px;
+    & i {
+        color: gray;
+        font-size: .8em;
+        padding: 5px;
+        transition: .3s;    
+        cursor: pointer;
+        &:hover {
+            @include br(5px);
+            background: rgba(black, 0.1);
+            color: white;
+        }
+    }
+}
